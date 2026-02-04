@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Bootcamp | Ayin Education</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&family=Great+Vibes&family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#217346",
+                        secondary: "#10B981",
+                    },
+                    fontFamily: {
+                        display: ["Plus Jakarta Sans", "Inter", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        signature: ["Great Vibes", "cursive"],
+                        serif: ["Lora", "serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #217346 0%, #10B981 100%);
+        }
+        .gradient-cert {
+            background: linear-gradient(180deg, #217346 0%, #10B981 50%, #059669 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+        }
+        .community-rings {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.2;
+        }
+        .ring {
+            position: absolute;
+            border: 0.5px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex items-center">
+                    <img src="images/logo.png" alt="Ayin Education" class="h-40 w-auto">
+                </div>
+                <div id="nav-menu" class="hidden md:flex items-center space-x-10 font-medium text-gray-700" style="margin-left: 400px;" >
+                    <a class="hover:text-primary transition-colors text-base" href="./index.html">Home</a>
+                    <a class="hover:text-primary transition-colors text-base" href="#">About Us</a>
+                    <a class="hover:text-primary transition-colors text-base" href="#">Courses</a>
+                    <!-- Bootcamps Dropdown -->
+                    <div class="relative group">
+                        <button class="hover:text-primary transition-colors text-base flex items-center gap-1">
+                            Bootcamps
+                            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <!-- Dropdown Menu -->
+                        <div class="absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 -translate-y-2">
+                            <div class="py-2">
+                                <a href="python-bootcamp.html" class="flex items-center gap-3 px-4 py-3 hover:bg-blue-50 transition-colors">
+                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                                            <path d="M12 0C8.4 0 8.8 1.8 8.8 1.8L8.82 3.8H12V4.4H6.93C6.93 4.4 4 4.2 4 8.4C4 12.6 6.3 12.5 6.3 12.5H7.8V10.6C7.8 10.6 7.73 8.2 9.3 8.2H13.46C13.46 8.2 15.2 8.25 15.2 6.5V2.5C15.2 2.5 15.5 0 12 0Z" fill="#3776AB"/>
+                                            <path d="M12 24C15.6 24 15.2 22.2 15.2 22.2L15.18 20.2H12V19.6H17.07C17.07 19.6 20 19.8 20 15.6C20 11.4 17.7 11.5 17.7 11.5H16.2V13.4C16.2 13.4 16.27 15.8 14.7 15.8H10.54C10.54 15.8 8.8 15.75 8.8 17.5V21.5C8.8 21.5 8.5 24 12 24Z" fill="#FFD43B"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Python Bootcamp</div>
+                                        <div class="text-xs text-gray-500">Programming Basics</div>
+                                    </div>
+                                </a>
+                                <a href="excel-bootcamp.html" class="flex items-center gap-3 px-4 py-3 hover:bg-green-50 transition-colors">
+                                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#217346">
+                                            <rect width="24" height="24" rx="3" fill="#217346"/>
+                                            <text x="12" y="17" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">X</text>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Excel Bootcamp</div>
+                                        <div class="text-xs text-gray-500">Data Analysis</div>
+                                    </div>
+                                </a>
+                                <a href="c-bootcamp.html" class="flex items-center gap-3 px-4 py-3 hover:bg-purple-50 transition-colors">
+                                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                                            <circle cx="12" cy="12" r="11" fill="#00599C"/>
+                                            <text x="12" y="17" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">C</text>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900">C Language</div>
+                                        <div class="text-xs text-gray-500">Programming Foundation</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="hover:text-primary transition-colors text-base" href="#">Contact</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button id="menu-toggle" class="md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-4 font-medium text-gray-700">
+                    <a class="hover:text-primary transition-colors text-base py-2" href="./index.html">Home</a>
+                    <a class="hover:text-primary transition-colors text-base py-2" href="#">About Us</a>
+                    <a class="hover:text-primary transition-colors text-base py-2" href="#">Courses</a>
+                    <a class="hover:text-primary transition-colors text-base py-2" href="#">Testimonials</a>
+                    <a class="hover:text-primary transition-colors text-base py-2" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-16 lg:py-24 overflow-hidden bg-gradient-to-br from-green-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-wider text-primary uppercase bg-primary/10 rounded-full">
+                        Expert-Led Training
+                    </span>
+                    <h1 class="text-5xl lg:text-6xl font-display font-extrabold leading-tight mb-8">
+                        Master <span class="text-primary">Excel</span> & Become a Data Analysis Expert
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-10 leading-relaxed max-w-xl">
+                        Transform your career with our comprehensive Excel Bootcamp. Learn advanced formulas, data visualization, automation with macros, pivot tables, and real-world business analytics. Accelerate your journey to becoming an Excel power user with expert-led training.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mb-12">
+                        <button class="bg-primary text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:shadow-lg hover:shadow-primary/30 transition-all">
+                            Download Syllabus <span class="material-icons-round">arrow_forward</span>
+                        </button>
+                    </div>
+                    <div class="flex flex-wrap gap-8 items-center border-t border-gray-200 pt-8">
+                        <div class="flex flex-col">
+                            <div class="flex items-center text-amber-400 mb-1">
+                                <span class="material-icons-round text-sm">star</span>
+                                <span class="material-icons-round text-sm">star</span>
+                                <span class="material-icons-round text-sm">star</span>
+                                <span class="material-icons-round text-sm">star</span>
+                                <span class="material-icons-round text-sm">star_half</span>
+                            </div>
+                            <span class="font-bold">Rated 4.9/5</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="material-icons-round text-primary p-2 bg-primary/10 rounded-lg">groups</span>
+                            <div>
+                                <p class="font-bold leading-none">8,000+</p>
+                                <p class="text-sm text-gray-500">Learners</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="material-icons-round text-secondary p-2 bg-secondary/10 rounded-lg">verified</span>
+                            <div>
+                                <p class="font-bold leading-none">97%</p>
+                                <p class="text-sm text-gray-500">Success Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div id="excelForm" class="bg-white p-8 lg:p-10 rounded-3xl shadow-2xl border border-gray-100 relative z-10">
+                        <h3 class="text-2xl font-bold mb-2">Reserve Your Free Webinar Seat</h3>
+                        <p class="text-gray-500 mb-8">Join our next live info session and discover how this Excel Bootcamp can transform your data analysis skills.</p>
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Full Name*</label>
+                                <input id="name" class="w-full bg-gray-50 border-gray-200 rounded-xl px-4 py-3 focus:ring-primary focus:border-primary" placeholder="Enter your name" type="text"/>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Email Address*</label>
+                                <input id="email" class="w-full bg-gray-50 border-gray-200 rounded-xl px-4 py-3 focus:ring-primary focus:border-primary" placeholder="youremail@example.com" type="email"/>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Mobile Number*</label>
+                                <input id="phone" class="w-full bg-gray-50 border-gray-200 rounded-xl px-4 py-3 focus:ring-primary focus:border-primary" placeholder="+91 XXXXX XXXXX" type="tel"/>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Current Excel Level</label>
+                                <select id="level" class="w-full bg-gray-50 border-gray-200 rounded-xl px-4 py-3 focus:ring-primary focus:border-primary">
+                                    <option>Complete Beginner</option>
+                                    <option>Basic User</option>
+                                    <option>Intermediate</option>
+                                    <option>Advanced</option>
+                                </select>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <input class="mt-1 rounded border-gray-300 text-primary focus:ring-primary" type="checkbox"/>
+                                <span class="text-sm text-gray-500">I agree to receive updates and communications regarding the bootcamp.</span>
+                            </div>
+                            <button class="w-full bg-secondary text-white py-4 rounded-xl font-bold flex items-center justify-center gap-3 hover:shadow-lg hover:shadow-secondary/20 transition-all" type="submit">
+                                <span class="material-icons-round">forum</span> Submit on WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Excel Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <img src="images/excel_bootcamp_illustration.png" alt="Why Excel" class="w-full h-auto"/>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-4xl font-display font-extrabold mb-8 relative">
+                        Why This Bootcamp?
+                        <span class="absolute bottom-0 left-0 w-20 h-1.5 bg-primary"></span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Excel is the world's most powerful data analysis tool, used by millions of professionals across every industry. This bootcamp transforms complete beginners into Excel power users through hands-on projects and expert mentorship. Whether you're starting your analytics career or upskilling for your current role, this is your fastest path to Excel mastery.
+                    </p>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-1">
+                                <span class="material-icons-round text-white text-xs">done</span>
+                            </div>
+                            <div>
+                                <span class="font-bold text-lg">Master advanced formulas and functions</span>
+                                <p class="text-gray-500">Learn VLOOKUP, INDEX-MATCH, IF statements, and complex nested formulas to automate calculations.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-1">
+                                <span class="material-icons-round text-white text-xs">done</span>
+                            </div>
+                            <div>
+                                <span class="font-bold text-lg">Create stunning data visualizations</span>
+                                <p class="text-gray-500">Build professional charts, dashboards, and reports that communicate insights effectively.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-1">
+                                <span class="material-icons-round text-white text-xs">done</span>
+                            </div>
+                            <div>
+                                <span class="font-bold text-lg">Automate repetitive tasks with macros</span>
+                                <p class="text-gray-500">Save hours of work by recording and writing VBA macros to handle routine operations.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-1">
+                                <span class="material-icons-round text-white text-xs">done</span>
+                            </div>
+                            <div>
+                                <span class="font-bold text-lg">Analyze large datasets with pivot tables</span>
+                                <p class="text-gray-500">Unlock the power of pivot tables to summarize, analyze, and present complex data effortlessly.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- WhatsApp Community -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 flex items-center gap-3">
+                <div class="w-1.5 h-8 bg-primary rounded-full"></div>
+                <h2 class="text-4xl font-display text-center font-extrabold">Join whatsapp community</h2>
+            </div>
+            <div class="bg-gray-900 rounded-3xl p-8 lg:p-24 relative overflow-hidden">
+                <div class="community-rings">
+                    <div class="ring" style="width: 100%; height: 100%;"></div>
+                    <div class="ring" style="width: 80%; height: 80%;"></div>
+                    <div class="ring" style="width: 60%; height: 60%;"></div>
+                    <div class="ring" style="width: 40%; height: 40%;"></div>
+                    <div class="ring" style="width: 20%; height: 20%;"></div>
+                </div>
+                <div class="relative z-10 text-center flex flex-col items-center">
+                    <p class="text-white/90 text-lg md:text-xl font-medium mb-12 max-w-2xl">
+                        Join a community of students dedicated to upskilling
+                    </p>
+                    <div class="relative mb-12">
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-64 md:h-64 bg-white/10 rounded-full blur-3xl"></div>
+                        <h3 class="text-6xl md:text-8xl font-serif italic font-bold text-white tracking-tight relative z-10 text-glow">
+                            1,867,135
+                        </h3>
+                    </div>
+                    <p class="text-white/60 text-sm md:text-base font-medium max-w-xl">
+                        Approximately 10,000 students enroll in LetsUpgrade programs every day
+                    </p>
+                    <button class="bg-primary text-white text-2xl px-8 py-4 mx-8 my-8 rounded-xl font-bold flex items-center gap-2 hover:shadow-lg hover:shadow-primary/30 transition-all">
+                    Join Now
+                </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Will Learn -->
+    <section class="py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-10 sm:mb-12 lg:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-display font-extrabold mb-3 sm:mb-4">What You Will Learn</h2>
+                <div class="w-16 sm:w-20 lg:w-24 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
+                <!-- Learning Points List -->
+                <div class="space-y-3 sm:space-y-4">
+                    <!-- Item 1 -->
+                    <div class="flex items-center gap-3 sm:gap-4 bg-white p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <span class="material-icons-round text-primary text-xl sm:text-2xl">check_circle</span>
+                        </div>
+                        <span class="font-semibold text-sm sm:text-base lg:text-lg">Excel Fundamentals & Navigation</span>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="flex items-center gap-3 sm:gap-4 bg-white p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <span class="material-icons-round text-primary text-xl sm:text-2xl">check_circle</span>
+                        </div>
+                        <span class="font-semibold text-sm sm:text-base lg:text-lg">Advanced Formulas & Functions</span>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="flex items-center gap-3 sm:gap-4 bg-white p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <span class="material-icons-round text-primary text-xl sm:text-2xl">check_circle</span>
+                        </div>
+                        <span class="font-semibold text-sm sm:text-base lg:text-lg">Pivot Tables & Data Analysis</span>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="flex items-center gap-3 sm:gap-4 bg-white p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <span class="material-icons-round text-primary text-xl sm:text-2xl">check_circle</span>
+                        </div>
+                        <span class="font-semibold text-sm sm:text-base lg:text-lg">Data Visualization & Charts</span>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="flex items-center gap-3 sm:gap-4 bg-white p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <span class="material-icons-round text-primary text-xl sm:text-2xl">check_circle</span>
+                        </div>
+                        <span class="font-semibold text-sm sm:text-base lg:text-lg">Macros & VBA Automation</span>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="flex items-center gap-3 sm:gap-4 bg-white p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <span class="material-icons-round text-primary text-xl sm:text-2xl">check_circle</span>
+                        </div>
+                        <span class="font-semibold text-sm sm:text-base lg:text-lg">Dashboard Creation & Reporting</span>
+                    </div>
+                </div>
+
+                <!-- Excel Illustration -->
+                <div class="relative group mt-8 lg:mt-0">
+                    <!-- Glow effect -->
+                    <div class="absolute -inset-2 sm:-inset-4 bg-primary/5 rounded-[2rem] sm:rounded-[2.5rem] blur-2xl group-hover:bg-primary/10 transition-all duration-500"></div>
+                    
+                    <!-- Main container -->
+                    <div class="relative bg-gradient-to-br from-green-50 to-emerald-50 p-6 sm:p-8 md:p-10 lg:p-12 rounded-[2rem] sm:rounded-[2.5rem] border border-green-100 shadow-xl overflow-hidden min-h-[280px] sm:min-h-[350px] lg:min-h-[400px] flex items-center justify-center">
+                        
+                        <!-- Decorative floating icons -->
+                        <div class="absolute top-4 sm:top-6 lg:top-8 left-4 sm:left-6 lg:left-8 p-2 sm:p-3 lg:p-4 bg-blue-100 rounded-xl sm:rounded-2xl text-blue-600 animate-bounce">
+                            <svg class="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="absolute bottom-6 sm:bottom-8 lg:bottom-12 right-6 sm:right-8 lg:right-12 p-2 sm:p-3 lg:p-4 bg-amber-100 rounded-xl sm:rounded-2xl text-amber-600 animate-pulse">
+                            <svg class="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="absolute top-1/4 right-4 sm:right-6 lg:right-8 p-2 sm:p-3 lg:p-4 bg-green-100 rounded-xl sm:rounded-2xl text-green-600 hidden sm:block">
+                            <svg class="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        
+                        <!-- Main Excel illustration -->
+                        <div class="flex flex-col items-center w-full">
+                            <!-- Excel spreadsheet -->
+                            <div class="relative w-full max-w-[280px] sm:max-w-[320px] md:max-w-[350px] lg:max-w-[380px] aspect-[4/3] bg-white rounded-xl sm:rounded-2xl border-2 sm:border-3 lg:border-4 border-gray-200 shadow-2xl flex items-center justify-center overflow-hidden">
+                                <!-- Excel header bar -->
+                                <div class="absolute inset-x-0 top-0 h-8 sm:h-10 lg:h-12 bg-primary flex items-center px-3 sm:px-4">
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-white" viewBox="0 0 100 100" fill="currentColor">
+                                            <rect width="100" height="100" rx="15" fill="white"/>
+                                            <text x="50" y="70" font-family="Arial, sans-serif" font-size="50" font-weight="bold" fill="#217346" text-anchor="middle">X</text>
+                                        </svg>
+                                        <span class="text-white font-semibold text-xs sm:text-sm">Excel Bootcamp</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Spreadsheet grid -->
+                                <div class="w-full h-full pt-8 sm:pt-10 lg:pt-12 p-2 sm:p-3 bg-gray-50">
+                                    <div class="grid grid-cols-4 gap-0.5 sm:gap-1">
+                                        <!-- Header row -->
+                                        <div class="bg-gray-300 p-1 sm:p-1.5 text-center text-[8px] sm:text-[10px] font-bold">A</div>
+                                        <div class="bg-gray-300 p-1 sm:p-1.5 text-center text-[8px] sm:text-[10px] font-bold">B</div>
+                                        <div class="bg-gray-300 p-1 sm:p-1.5 text-center text-[8px] sm:text-[10px] font-bold">C</div>
+                                        <div class="bg-gray-300 p-1 sm:p-1.5 text-center text-[8px] sm:text-[10px] font-bold">D</div>
+                                        
+                                        <!-- Data rows -->
+                                        <div class="bg-white border border-gray-200 p-1 sm:p-1.5 text-[7px] sm:text-[9px]">Sales</div>
+                                        <div class="bg-white border border-gray-200 p-1 sm:p-1.5 text-[7px] sm:text-[9px]">$1000</div>
+                                        <div class="bg-white border border-gray-200 p-1 sm:p-1.5 text-[7px] sm:text-[9px]">Q1</div>
+                                        <div class="bg-primary/20 border border-primary p-1 sm:p-1.5 text-[7px] sm:text-[9px] font-bold">✓</div>
+                                        
+                                        <div class="bg-white border border-gray-200 p-1 sm:p-1.5 text-[7px] sm:text-[9px]">Revenue</div>
+                                        <div class="bg-white border border-gray-200 p-1 sm:p-1.5 text-[7px] sm:text-[9px]">$5000</div>
+                                        <div class="bg-white border border-gray-200 p-1 sm:p-1.5 text-[7px] sm:text-[9px]">Q2</div>
+                                        <div class="bg-primary/20 border border-primary p-1 sm:p-1.5 text-[7px] sm:text-[9px] font-bold">✓</div>
+                                        
+                                        <div class="bg-white border border-gray-200 p-1 sm:p-1.5 text-[7px] sm:text-[9px]">Profit</div>
+                                        <div class="bg-white border border-gray-200 p-1 sm:p-1.5 text-[7px] sm:text-[9px]">$3000</div>
+                                        <div class="bg-white border border-gray-200 p-1 sm:p-1.5 text-[7px] sm:text-[9px]">Q3</div>
+                                        <div class="bg-primary/20 border border-primary p-1 sm:p-1.5 text-[7px] sm:text-[9px] font-bold">✓</div>
+                                        
+                                        <!-- Formula row -->
+                                        <div class="col-span-4 bg-green-100 border border-green-300 p-1 sm:p-2 text-[8px] sm:text-[10px] font-mono text-green-700 mt-1 sm:mt-2">
+                                            =SUM(B1:B3)
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Small chart -->
+                                    <div class="mt-2 sm:mt-4 flex items-end gap-0.5 sm:gap-1 h-12 sm:h-16 lg:h-20">
+                                        <div class="bg-primary w-full h-1/3"></div>
+                                        <div class="bg-primary w-full h-2/3"></div>
+                                        <div class="bg-primary w-full h-full"></div>
+                                        <div class="bg-primary w-full h-1/2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Caption -->
+                            <div class="mt-4 sm:mt-6">
+                                <p class="text-center text-xs sm:text-sm font-semibold text-gray-600">Master Excel from Basic to Advanced</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Details -->
+    <section class="py-24 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-display font-extrabold mb-4">Master Excel in record time</h2>
+                <p class="text-gray-400">Everything you need to become an Excel power user</p>
+            </div>
+            <div class="max-w-4xl mx-auto border border-gray-700 rounded-3xl p-8 lg:p-12 bg-gray-800/50">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-16">
+                    <div class="flex items-center gap-6">
+                        <div class="w-16 h-16 rounded-2xl border border-gray-600 flex items-center justify-center">
+                            <span class="material-icons-round text-3xl text-gray-400">calendar_month</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold">4 Weeks</p>
+                            <p class="text-gray-400">Intensive Course</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div class="w-16 h-16 rounded-2xl border border-gray-600 flex items-center justify-center">
+                            <span class="material-icons-round text-3xl text-gray-400">video_call</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold">Live Sessions</p>
+                            <p class="text-gray-400">Interactive Learning</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div class="w-16 h-16 rounded-2xl border border-gray-600 flex items-center justify-center">
+                            <span class="material-icons-round text-3xl text-gray-400">timer</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold">1.5 Hours</p>
+                            <p class="text-gray-400">Per Session</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div class="w-16 h-16 rounded-2xl border border-gray-600 flex items-center justify-center">
+                            <span class="material-icons-round text-3xl text-gray-400">psychology_alt</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold">Doubt Sessions</p>
+                            <p class="text-gray-400">Expert Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum CTA -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-primary/5 rounded-3xl p-8 lg:p-16 border border-primary/20">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div>
+                        <h2 class="text-3xl lg:text-4xl font-display font-extrabold mb-4">Full Curriculum</h2>
+                        <p class="text-gray-600 text-lg">Explore our comprehensive Excel curriculum from basics to advanced automation.</p>
+                    </div>
+                    <button class="flex items-center gap-4 bg-white px-8 py-5 rounded-2xl border border-gray-200 hover:shadow-xl transition-all">
+                        <span class="text-xl font-bold">Download</span>
+                        <div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white">
+                            <span class="material-icons-round">download</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootcamp Ticket -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-display font-extrabold mb-4">Bootcamp Ticket</h2>
+            </div>
+            <div class="max-w-5xl mx-auto">
+                <div class="bg-gray-900 rounded-3xl p-8 lg:p-12 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
+                    <!-- Left side - Text -->
+                    <div class="flex-1 text-left">
+                        <p class="text-primary text-xs font-bold mb-4 uppercase tracking-widest">BOOTCAMP PRICE</p>
+                        <h3 class="text-3xl lg:text-5xl font-display font-extrabold text-white leading-tight">
+                            Get your entry ticket to becoming an <span class="text-primary">Excel Expert</span>
+                        </h3>
+                    </div>
+                    
+                    <!-- Right side - Ticket Card -->
+                    <div class="flex-shrink-0">
+                        <div class="bg-gray-800 border-2 border-gray-700 rounded-2xl p-8 min-w-[280px]">
+                            <!-- Top section - Icon -->
+                            <div class="text-center mb-6 pb-6 border-b-2 border-dashed border-gray-700">
+                                <div class="inline-flex items-center justify-center w-32 h-32 bg-primary rounded-xl mb-3">
+                                    <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"/>
+                                    </svg>
+                                </div>
+                                <p class="text-gray-400 text-xs font-bold uppercase tracking-wider">Admission Pass</p>
+                            </div>
+                            
+                            <!-- Bottom section - Price -->
+                            <div class="text-center">
+                                <p class="text-gray-400 text-sm font-semibold mb-2">One-time Investment</p>
+                                <p class="text-white text-5xl font-extrabold">RS 299</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootcamps Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl lg:text-4xl font-display font-extrabold mb-2">Bootcamps :</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Python Bootcamp Card -->
+                <div class="group bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="p-6 relative">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
+                            <span class="text-xs font-bold text-blue-600">LIVE</span>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="text-2xl font-display font-extrabold text-gray-900 mb-2">Master Python with AI</h3>
+                            <p class="text-sm text-gray-700 font-semibold">In Just 30 Days</p>
+                        </div>
+                        
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-24 h-24 bg-white rounded-2xl p-3 shadow-lg flex items-center justify-center">
+                                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M49.5 0C31.4 0 33.3 7.6 33.3 7.6L33.4 15.8H50V18.3H22.2C22.2 18.3 10 16.6 10 34.8C10 53 20.2 52.5 20.2 52.5H27.5V44.2C27.5 44.2 27.2 34 37.5 34H54.2C54.2 34 64 34.2 64 24.6V10.4C64 10.4 66 0 49.5 0Z" fill="#3776AB"/>
+                                        <path d="M50.5 100C68.6 100 66.7 92.4 66.7 92.4L66.6 84.2H50V81.7H77.8C77.8 81.7 90 83.4 90 65.2C90 47 79.8 47.5 79.8 47.5H72.5V55.8C72.5 55.8 72.8 66 62.5 66H45.8C45.8 66 36 65.8 36 75.4V89.6C36 89.6 34 100 50.5 100Z" fill="#FFD43B"/>
+                                        <circle cx="42" cy="10" r="3" fill="white"/>
+                                        <circle cx="58" cy="90" r="3" fill="#3776AB"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-600 mb-1">Real Projects. Expert Mentors.</p>
+                                <div class="flex gap-1">
+                                    <span class="bg-gray-800 text-white text-xs px-2 py-1 rounded-md font-semibold">Live Class</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-xl transition-colors">
+                            Start Your Journey
+                        </button>
+                    </div>
+                </div>
+
+                <!-- C Language Bootcamp Card -->
+                <div class="group bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="p-6 relative">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
+                            <span class="text-xs font-bold text-purple-600">LIVE</span>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="text-2xl font-display font-extrabold text-gray-900 mb-2">C Language Mastery</h3>
+                            <p class="text-sm text-gray-700 font-semibold">Foundation of Programming</p>
+                        </div>
+                        
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-24 h-24 bg-white rounded-2xl p-3 shadow-lg flex items-center justify-center">
+                                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="45" fill="#00599C"/>
+                                        <text x="50" y="70" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="white" text-anchor="middle">C</text>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-600 mb-1">Build Strong Fundamentals</p>
+                                <div class="flex gap-1">
+                                    <span class="bg-gray-800 text-white text-xs px-2 py-1 rounded-md font-semibold">Live Class</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-xl transition-colors">
+                            Start Your Journey
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Excel Bootcamp Card (Current) -->
+                <div class="group bg-gradient-to-br from-green-100 to-green-200 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 ring-4 ring-primary">
+                    <div class="p-6 relative">
+                        <div class="absolute top-4 right-4 bg-primary backdrop-blur-sm px-3 py-1 rounded-full">
+                            <span class="text-xs font-bold text-white">CURRENT PAGE</span>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="text-2xl font-display font-extrabold text-gray-900 mb-2">Excel Pro</h3>
+                            <p class="text-sm text-gray-700 font-semibold">Data Analysis & Automation</p>
+                        </div>
+                        
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-24 h-24 bg-white rounded-2xl p-3 shadow-lg flex items-center justify-center">
+                                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="100" height="100" rx="15" fill="#217346"/>
+                                        <text x="50" y="70" font-family="Arial, sans-serif" font-size="50" font-weight="bold" fill="white" text-anchor="middle">X</text>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-600 mb-1">Advanced Formulas & Macros</p>
+                                <div class="flex gap-1">
+                                    <span class="bg-gray-800 text-white text-xs px-2 py-1 rounded-md font-semibold">Live Class</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-xl transition-colors">
+                            You're Here!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-display font-extrabold mb-4 text-primary">Certify your Learning</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Complete the course with assignments, and request your Excel mastery certificate
+                </p>
+            </div>
+            <div class="max-w-5xl mx-auto">
+                <div class="rounded-lg overflow-hidden shadow-2xl">
+                    <img src="images/certificate.png" alt="Course Completion Certificate" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Community -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 flex items-center gap-3">
+                <div class="w-1.5 h-8 bg-primary rounded-full"></div>
+                <h2 class="text-4xl font-display text-center font-extrabold">Join whatsapp community</h2>
+            </div>
+            <div class="bg-gray-900 rounded-3xl p-8 lg:p-24 relative overflow-hidden">
+                <div class="community-rings">
+                    <div class="ring" style="width: 100%; height: 100%;"></div>
+                    <div class="ring" style="width: 80%; height: 80%;"></div>
+                    <div class="ring" style="width: 60%; height: 60%;"></div>
+                    <div class="ring" style="width: 40%; height: 40%;"></div>
+                    <div class="ring" style="width: 20%; height: 20%;"></div>
+                </div>
+                <div class="relative z-10 text-center flex flex-col items-center">
+                    <p class="text-white/90 text-lg md:text-xl font-medium mb-12 max-w-2xl">
+                        Join a community of students dedicated to upskilling
+                    </p>
+                    <div class="relative mb-12">
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-64 md:h-64 bg-white/10 rounded-full blur-3xl"></div>
+                        <h3 class="text-6xl md:text-8xl font-serif italic font-bold text-white tracking-tight relative z-10 text-glow">
+                            1,867,135
+                        </h3>
+                    </div>
+                    <p class="text-white/60 text-sm md:text-base font-medium max-w-xl">
+                        Approximately 10,000 students enroll in LetsUpgrade programs every day
+                    </p>
+                    <button class="bg-primary text-white text-2xl px-8 py-4 mx-8 my-8 rounded-xl font-bold flex items-center gap-2 hover:shadow-lg hover:shadow-primary/30 transition-all">
+                    Join Now
+                </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-display font-extrabold mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600">Everything you need to know about the Excel bootcamp</p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-lg text-gray-900">What is the mode of instruction?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 leading-relaxed">The bootcamp is delivered through live interactive sessions where you can engage with instructors in real-time, ask questions, and practice Excel exercises alongside the instructor.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-lg text-gray-900">Do I need Excel installed on my computer?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 leading-relaxed">Yes, you'll need Microsoft Excel (2016 or later recommended) or access to Excel Online. We'll guide you through setup options in the first session if needed.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-lg text-gray-900">Do I need any prior Excel experience?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 leading-relaxed">No prior Excel experience is required! We start from the basics and gradually progress to advanced features, ensuring everyone can follow along regardless of their starting level.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-lg text-gray-900">What platform will the classes be hosted on?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 leading-relaxed">Classes are hosted on Zoom, providing an interactive learning environment with screen sharing, breakout rooms for practice sessions, and chat features for questions.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-lg text-gray-900">What topics are covered in the curriculum?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 leading-relaxed">The curriculum covers Excel fundamentals, advanced formulas (VLOOKUP, INDEX-MATCH, etc.), pivot tables, data visualization, conditional formatting, macros, VBA basics, and dashboard creation with real-world projects.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-lg text-gray-900">Will I receive practice files?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 leading-relaxed">Yes! You'll receive comprehensive practice files, templates, and datasets for each module to practice the concepts learned during sessions.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-lg text-gray-900">Can I provide feedback about the program?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 leading-relaxed">Absolutely! We welcome and encourage feedback to continuously improve our program. You can share your thoughts through feedback forms or directly with instructors.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-lg text-gray-900">Is there a community for students?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 leading-relaxed">Yes! We have an active WhatsApp community where students can connect, share Excel tips, ask questions, and support each other throughout the learning journey.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 9 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-lg text-gray-900">What if I encounter technical issues during the program?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 leading-relaxed">Our support team is available to help you resolve any technical issues with Excel or the platform. You can reach out through the community chat or contact our support email for assistance.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 10 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-lg text-gray-900">What if I miss a live session?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 leading-relaxed">All live sessions are recorded and made available to enrolled students, so you can catch up at your own pace if you miss a class.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 11 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-lg text-gray-900">Will I learn VBA programming?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 leading-relaxed">Yes! We cover VBA (Visual Basic for Applications) basics and teach you how to record macros, edit VBA code, and create automated solutions for repetitive tasks.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 12 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-lg text-gray-900">Will I receive a certificate upon completion?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 leading-relaxed">Yes! Upon successful completion of the bootcamp and all assignments, you'll receive a certificate of completion to showcase your Excel expertise to employers.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 13 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-semibold text-lg text-gray-900">Will there be any real-world projects?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 leading-relaxed">Yes! The bootcamp includes multiple real-world projects such as creating sales dashboards, financial models, inventory management systems, and automated reports to build a portfolio of practical work.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center gap-2 mb-8">
+                        <img src="images/logo.png" alt="Ayin Education" class="h-40 w-auto">
+                    </div>
+                    <p class="text-gray-400 mb-8 max-w-xs leading-relaxed">
+                        Empowering aspiring professionals to build successful careers through comprehensive training and dedicated support.
+                    </p>
+                    <div class="flex gap-3">
+                        <a class="w-11 h-11 rounded-lg bg-gray-700 hover:bg-gray-600 flex items-center justify-center transition-colors" href="#">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a class="w-11 h-11 rounded-lg bg-gray-700 hover:bg-gray-600 flex items-center justify-center transition-colors" href="#">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </a>
+                        <a class="w-11 h-11 rounded-lg bg-gray-700 hover:bg-gray-600 flex items-center justify-center transition-colors" href="#">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a class="w-11 h-11 rounded-lg bg-gray-700 hover:bg-gray-600 flex items-center justify-center transition-colors" href="#">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-8">Programs</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a class="hover:text-white transition-colors" href="#">Excel Bootcamp</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Python Bootcamp</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">C Programming</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Data Analysis</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-8">Company</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a class="hover:text-white transition-colors" href="#">About Us</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Success Stories</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Hire Our Graduates</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-8">Support</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a class="hover:text-white transition-colors" href="#">Help Center</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-center text-gray-500 text-sm">
+                <p>© 2024 Ayin Education. All rights reserved. Built with passion for aspiring professionals.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+       // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            
+            // Toggle icon between menu and close
+            const svg = menuToggle.querySelector('svg');
+            if (mobileMenu.classList.contains('hidden')) {
+                svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>';
+            } else {
+                svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>';
+            }
+        });
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('.faq-icon');
+                
+                // Close other open FAQs
+                faqQuestions.forEach(otherQuestion => {
+                    if (otherQuestion !== question) {
+                        const otherAnswer = otherQuestion.nextElementSibling;
+                        const otherIcon = otherQuestion.querySelector('.faq-icon');
+                        otherAnswer.classList.add('hidden');
+                        otherIcon.style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle current FAQ
+                answer.classList.toggle('hidden');
+                if (answer.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+        // form
+        document.getElementById("excelForm").addEventListener("submit", async function(e) {
+        e.preventDefault();
+
+        const data = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            phone: document.getElementById("phone").value,
+            level: document.getElementById("level").value,
+            course: "Excel Bootcamp"
+        };
+
+        const res = await fetch("https://python-bootcamp-site.onrender.com/submit", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+        });
+
+        const result = await res.json();
+        alert(result.message);
+
+        document.getElementById("excelForm").reset();
+        })
+    </script>
+</body>
+</html>
