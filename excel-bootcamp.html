@@ -186,6 +186,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- form -->
                 <div class="relative">
                     <div id="excelForm" class="bg-white p-8 lg:p-10 rounded-3xl shadow-2xl border border-gray-100 relative z-10">
                         <h3 class="text-2xl font-bold mb-2">Reserve Your Free Webinar Seat</h3>
@@ -1056,17 +1057,17 @@
             course: "Excel Bootcamp"
         };
 
-        const res = await fetch("https://python-bootcamp-site.onrender.com/submit", {
+        const res = await fetch("https://script.google.com/macros/s/AKfycbwNxWQZmwvjhDt2qE8HyNCYcOtQJxPkfyf9Rg0e13TykYE9tzvxNhTbdKrrvw7lmew/exec", {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: {
+            "Content-Type": "application/json"
+            },
             body: JSON.stringify(data)
         });
 
         const result = await res.json();
-        alert(result.message);
-
-        document.getElementById("excelForm").reset();
-        })
+        alert("Form submitted successfully!");
+        });
     </script>
 </body>
 </html>

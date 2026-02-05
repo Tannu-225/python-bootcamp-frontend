@@ -220,7 +220,7 @@
                                 <span class="material-icons-round">forum</span> Submit on WhatsApp
                             </button>
                         </form>
-                    </div>npm install
+                    </div>
                 </div>
             </div>
         </div>
@@ -1032,7 +1032,7 @@
                 }
             });
         });
-// form
+        // Form Submission   
         document.getElementById("pythonForm").addEventListener("submit", async function(e) {
         e.preventDefault();
 
@@ -1044,16 +1044,16 @@
             course: "Python Bootcamp"
         };
 
-        const res = await fetch("https://python-bootcamp-site.onrender.com/submit", {
+        const res = await fetch("https://script.google.com/macros/s/AKfycbwNxWQZmwvjhDt2qE8HyNCYcOtQJxPkfyf9Rg0e13TykYE9tzvxNhTbdKrrvw7lmew/exec", {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: {
+            "Content-Type": "application/json"
+            },
             body: JSON.stringify(data)
         });
 
         const result = await res.json();
-        alert(result.message);
-
-        document.getElementById("pythonForm").reset();
+        alert("Form submitted successfully!");
         });
     </script>
 </body>
