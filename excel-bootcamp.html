@@ -1117,7 +1117,7 @@
             });
         });
         // form
-        document.getElementById("excelForm").addEventListener("submit", async function(e) {
+        document.getElementById("excelForm").addEventListener("submit", function (e) {
         e.preventDefault();
 
         const data = {
@@ -1128,16 +1128,17 @@
             course: "Excel Bootcamp"
         };
 
-        const res = await fetch("https://script.google.com/macros/s/AKfycbz7RY8WKTpsS-h3VTgoZRr682v-eEhDzdMxMmWacACbrH8dFo5t6XoT8v9hYzoW9g/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbz7RY8WKTpsS-h3VTgoZRr682v-eEhDzdMxMmWacACbrH8dFo5t6XoT8v9hYzoW9g/exec", {
             method: "POST",
+            mode: "no-cors",   
             headers: {
             "Content-Type": "application/json"
             },
             body: JSON.stringify(data)
         });
 
-        const result = await res.json();
-        alert("Form submitted successfully!");
+        alert("✅ Form submitted successfully!");
+        document.getElementById("pythonForm").reset();
         });
     </script>
 </body>
