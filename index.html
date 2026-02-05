@@ -80,7 +80,7 @@
                 <div id="nav-menu" class="hidden md:flex items-center space-x-10 font-medium text-gray-700" style="margin-left: 400px;" >
                     <a class="hover:text-primary transition-colors text-base" href="./index.html">Home</a>
                     <a class="hover:text-primary transition-colors text-base" href="#">About Us</a>
-                    <a class="hover:text-primary transition-colors text-base" href="#">Courses</a>
+                    
                     <!-- Bootcamps Dropdown -->
                     <div class="relative group">
                         <button class="hover:text-primary transition-colors text-base flex items-center gap-1">
@@ -131,6 +131,8 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <a class="hover:text-primary transition-colors text-base" href="#">Testimonials</a>
                     <a class="hover:text-primary transition-colors text-base" href="#">Contact</a>
                 </div>
                 <div class="flex items-center gap-4">
@@ -146,14 +148,65 @@
                 <div class="flex flex-col space-y-4 font-medium text-gray-700">
                     <a class="hover:text-primary transition-colors text-base py-2" href="./index.html">Home</a>
                     <a class="hover:text-primary transition-colors text-base py-2" href="#">About Us</a>
-                    <a class="hover:text-primary transition-colors text-base py-2" href="#">Courses</a>
+                    
+                    <!-- Mobile Bootcamps Dropdown (same as desktop) -->
+                    <div class="relative">
+                        <button id="mobile-bootcamps-toggle" class="w-full text-left hover:text-primary transition-colors text-base py-2 flex items-center gap-1">
+                            <span>Bootcamps</span>
+                            <svg id="mobile-bootcamps-icon" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <!-- Dropdown Menu (Desktop style for mobile) -->
+                        <div id="mobile-bootcamps-menu" class="hidden mt-2 bg-white rounded-xl shadow-lg border border-gray-100">
+                            <div class="py-2">
+                                <a href="python-bootcamp.html" class="flex items-center gap-3 px-4 py-3 hover:bg-blue-50 transition-colors">
+                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                                            <path d="M12 0C8.4 0 8.8 1.8 8.8 1.8L8.82 3.8H12V4.4H6.93C6.93 4.4 4 4.2 4 8.4C4 12.6 6.3 12.5 6.3 12.5H7.8V10.6C7.8 10.6 7.73 8.2 9.3 8.2H13.46C13.46 8.2 15.2 8.25 15.2 6.5V2.5C15.2 2.5 15.5 0 12 0Z" fill="#3776AB"/>
+                                            <path d="M12 24C15.6 24 15.2 22.2 15.2 22.2L15.18 20.2H12V19.6H17.07C17.07 19.6 20 19.8 20 15.6C20 11.4 17.7 11.5 17.7 11.5H16.2V13.4C16.2 13.4 16.27 15.8 14.7 15.8H10.54C10.54 15.8 8.8 15.75 8.8 17.5V21.5C8.8 21.5 8.5 24 12 24Z" fill="#FFD43B"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Python Bootcamp</div>
+                                        <div class="text-xs text-gray-500">Programming Basics</div>
+                                    </div>
+                                </a>
+                                <a href="excel-bootcamp.html" class="flex items-center gap-3 px-4 py-3 hover:bg-green-50 transition-colors">
+                                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#217346">
+                                            <rect width="24" height="24" rx="3" fill="#217346"/>
+                                            <text x="12" y="17" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">X</text>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900">Excel Bootcamp</div>
+                                        <div class="text-xs text-gray-500">Data Analysis</div>
+                                    </div>
+                                </a>
+                                <a href="c-bootcamp.html" class="flex items-center gap-3 px-4 py-3 hover:bg-purple-50 transition-colors">
+                                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                                            <circle cx="12" cy="12" r="11" fill="#00599C"/>
+                                            <text x="12" y="17" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">C</text>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-gray-900">C Language</div>
+                                        <div class="text-xs text-gray-500">Programming Foundation</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <a class="hover:text-primary transition-colors text-base py-2" href="#">Testimonials</a>
                     <a class="hover:text-primary transition-colors text-base py-2" href="#">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
-
+    
        <!-- Hero Section -->
     <section class="relative py-16 lg:py-24 overflow-hidden bg-gradient-to-br from-purple-50 to-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
