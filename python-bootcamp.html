@@ -1058,6 +1058,24 @@
             }
         });
 
+        // Mobile bootcamps dropdown toggle
+        const mobileBootcampsToggle = document.getElementById('mobile-bootcamps-toggle');
+        const mobileBootcampsMenu = document.getElementById('mobile-bootcamps-menu');
+        const mobileBootcampsIcon = document.getElementById('mobile-bootcamps-icon');
+        
+        if (mobileBootcampsToggle) {
+            mobileBootcampsToggle.addEventListener('click', () => {
+                mobileBootcampsMenu.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (mobileBootcampsMenu.classList.contains('hidden')) {
+                    mobileBootcampsIcon.style.transform = 'rotate(0deg)';
+                } else {
+                    mobileBootcampsIcon.style.transform = 'rotate(180deg)';
+                }
+            });
+        }
+
         // FAQ Accordion
         const faqQuestions = document.querySelectorAll('.faq-question');
         
